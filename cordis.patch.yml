@@ -1,0 +1,9 @@
+# dsh-session-gc bundle patch: mount this plugin into the profile composition.
+#
+# `dsh plugin --profile dsh-tui add dsh-session-gc` installs the package and
+# appends it to the profile's dsh.profile.bundles because package.json declares
+# `dsh.bundle.patch`. At boot, app-boot applies this insert list, which mounts
+# the plugin row. No manual configuration is needed.
+- insert:
+    - id: session-gc
+      name: 'dsh-session-gc'

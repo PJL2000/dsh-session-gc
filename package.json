@@ -1,0 +1,33 @@
+{
+  "name": "dsh-session-gc",
+  "version": "0.1.0",
+  "description": "Manual session history cleanup for dsh-tui: browse, select, and delete old conversations while protecting pinned (starred) ones",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "engines": {
+    "node": "^22.19 || >=24"
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-harness-tui/dsh-tui": "*"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-harness-tui/dsh-tui": {
+      "optional": true
+    }
+  }
+}
