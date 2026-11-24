@@ -1,5 +1,7 @@
 # dsh-session-gc
 
+**English** | [简体中文](README.zh-CN.md)
+
 Manual session history cleanup for dsh-tui. Browse every stored conversation,
 mark what you want gone, delete it — **pinned (starred) sessions are protected
 by default**.
@@ -121,3 +123,7 @@ every other safeguard will eventually be wrong:
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+---
+
+[English](README.md) | [简体中文](README.zh-CN.md)
